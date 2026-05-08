@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f1117;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+header {
+  margin-bottom: 2.5rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.api-url {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #4ade80;
+}
+
+.form-section, .lista-section {
+  background: #1e2130;
+  border-radius: 12px;
+  padding: 1.8rem;
+  margin-bottom: 2rem;
+  border: 1px solid #2d3148;
+}
+
+.form-section h2, .lista-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  color: #cbd5e1;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #3a3f5c;
+  background: #0f1117;
+  color: #e2e8f0;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.botoes-form {
+  display: flex;
+  gap: 0.75rem;
+}
+
+button {
+  padding: 0.65rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover { opacity: 0.85; }
+
+.btn-salvar { background: #6366f1; color: #fff; }
+.btn-cancelar { background: #374151; color: #e2e8f0; }
+.btn-editar { background: #0ea5e9; color: #fff; font-size: 0.85rem; padding: 0.4rem 0.9rem; }
+.btn-excluir { background: #ef4444; color: #fff; font-size: 0.85rem; padding: 0.4rem 0.9rem; }
+
+.msg-sucesso { margin-top: 1rem; color: #4ade80; font-size: 0.9rem; }
+.msg-erro { margin-top: 1rem; color: #f87171; font-size: 0.9rem; }
+.carregando { color: #94a3b8; }
+.vazio { color: #64748b; }
+
+.grid-notas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+.card-nota {
+  background: #0f1117;
+  border: 1px solid #2d3148;
+  border-radius: 10px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.card-nota h3 {
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+.card-nota p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.card-nota small {
+  color: #475569;
+  font-size: 0.75rem;
+}
+
+.botoes-card {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
